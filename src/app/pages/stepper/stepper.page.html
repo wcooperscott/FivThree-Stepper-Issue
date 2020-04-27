@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Stepper</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <fiv-stepper #stepper mode="horizontal" (fivClick)="onStepClicked(event)">
+    <fiv-step title="title" subtitle="subtitle" icon="add"></fiv-step>
+    <fiv-step title="title" subtitle="subtitle" icon="add"></fiv-step>
+    <fiv-step title="title" subtitle="subtitle" icon="add"></fiv-step>
+    <fiv-step title="title" subtitle="subtitle" icon="add"></fiv-step>
+  </fiv-stepper>
+
+</ion-content>
