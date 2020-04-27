@@ -1,0 +1,7 @@
+{
+  "name": "Stepper-Issue",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
