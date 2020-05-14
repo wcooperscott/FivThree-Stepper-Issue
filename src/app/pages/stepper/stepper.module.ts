@@ -1,14 +1,10 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
-
-import { IonicModule } from '@ionic/angular';
-
-import { StepperPageRoutingModule } from './stepper-routing.module';
-
-import { StepperPage } from './stepper.page';
-import  { FivStepperHorizontal, FivStepper } from '@fivethree/core'
-import { LayoutModule } from '@fivethree/layout';
+import { CommonModule } from "@angular/common";
+import { NgModule } from "@angular/core";
+import { FormsModule } from "@angular/forms";
+import { FivStepperModule } from "@fivethree/core";
+import { IonicModule } from "@ionic/angular";
+import { StepperPageRoutingModule } from "./stepper-routing.module";
+import { StepperPage } from "./stepper.page";
 
 @NgModule({
   imports: [
@@ -16,10 +12,8 @@ import { LayoutModule } from '@fivethree/layout';
     FormsModule,
     IonicModule,
     StepperPageRoutingModule,
-    LayoutModule
+    FivStepperModule,
   ],
-  declarations: [
-    StepperPage
-  ]
+  declarations: [StepperPage],
 })
 export class StepperPageModule {}
